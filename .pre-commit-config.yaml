@@ -7,7 +7,7 @@ repos:
       - id: tflint
       - id: shellcheck
   - repo: git@github.com:kabisa/terraform-datadog-pre-commit-hook.git
-    rev: "0.1.10"
+    rev: "0.1.11"
     hooks:
       - id: terraform-datadog-docs
         exclude: ^README.md$
