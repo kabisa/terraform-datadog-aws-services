@@ -19,7 +19,7 @@ variable "ok_threshold" {
 }
 
 variable "no_data_timeframe" {
-  description = "Minutes of no data coming in. Scrape interval is approx 10 minutes"
+  description = "How long before we decide we got no data. Note that the scrape interval is approx 10 minutes"
   type        = number
   # Disabled because the measurements are data-blank moment-data-blank moment...
   # We don't want to monitor if DD is scraping
@@ -28,7 +28,7 @@ variable "no_data_timeframe" {
 }
 
 variable "notify_no_data" {
-  description = "Minutes of no data coming in. Scrape interval is approx 10 minutes"
+  description = "Whether we notify ourselves if there's no data. Scrape interval is approx 10 minutes"
   # Disabled because the measurements are data-blank moment-data-blank moment...
   # We don't want to monitor if DD is scraping
   # We only need to know if the service is down

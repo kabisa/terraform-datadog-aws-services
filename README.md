@@ -19,27 +19,27 @@ Steps:
 
 ## Module Variables
 
-| variable             | default                                  | required | description                                                        |
-|----------------------|------------------------------------------|----------|--------------------------------------------------------------------|
-| enabled              | True                                     | No       |                                                                    |
-| critical_threshold   | 1                                        | No       |                                                                    |
-| warning_threshold    | null                                     | No       |                                                                    |
-| ok_threshold         | 1                                        | No       |                                                                    |
-| no_data_timeframe    | null                                     | No       | Minutes of no data coming in. Scrape interval is approx 10 minutes |
-| notify_no_data       | False                                    | No       | Minutes of no data coming in. Scrape interval is approx 10 minutes |
-| note                 | Scrape interval is approx 10 minutes     | No       |                                                                    |
-| docs                 | Check the AWS Service status in case this alert is raised. This monitor checks the AWS Status page (https://status.aws.amazon.com/) as per https://www.datadoghq.com/blog/aws-outage-datadog-alerts-you/ | No       |                                                                    |
-| alerting_enabled     | True                                     | No       |                                                                    |
-| include_tags         | ['*']                                    | No       | This allows you to target a specific region or service             |
-| exclude_tags         | []                                       | No       | This allows you to exclude specific services or regions            |
-| by_tags              | ['region', 'service']                    | No       | Create an alert per <tags>. Behaves like a group by                |
-| priority             | 1                                        | No       | Number from 1 (high) to 5 (low).                                   |
-| env                  |                                          | Yes      |                                                                    |
-| service              | AWS                                      | No       |                                                                    |
-| notification_channel |                                          | Yes      |                                                                    |
-| additional_tags      | []                                       | No       |                                                                    |
-| locked               | True                                     | No       |                                                                    |
-| name_prefix          | ""                                       | No       |                                                                    |
-| name_suffix          | ""                                       | No       |                                                                    |
+| variable             | default                                  | required | description                                                                                  |
+|----------------------|------------------------------------------|----------|----------------------------------------------------------------------------------------------|
+| enabled              | True                                     | No       |                                                                                              |
+| critical_threshold   | 1                                        | No       |                                                                                              |
+| warning_threshold    | null                                     | No       |                                                                                              |
+| ok_threshold         | 1                                        | No       |                                                                                              |
+| no_data_timeframe    | null                                     | No       | How long before we decide we got no data. Note that the scrape interval is approx 10 minutes |
+| notify_no_data       | False                                    | No       | Whether we notify ourselves if there's no data. Scrape interval is approx 10 minutes         |
+| note                 | Scrape interval is approx 10 minutes     | No       |                                                                                              |
+| docs                 | Check the AWS Service status in case this alert is raised. This monitor checks the AWS Status page (https://status.aws.amazon.com/) as per https://www.datadoghq.com/blog/aws-outage-datadog-alerts-you/ | No       |                                                                                              |
+| alerting_enabled     | True                                     | No       |                                                                                              |
+| include_tags         | ['*']                                    | No       | This allows you to target a specific region or service                                       |
+| exclude_tags         | []                                       | No       | This allows you to exclude specific services or regions                                      |
+| by_tags              | ['region', 'service']                    | No       | Create an alert per <tags>. Behaves like a group by                                          |
+| priority             | 1                                        | No       | Number from 1 (high) to 5 (low).                                                             |
+| env                  |                                          | Yes      |                                                                                              |
+| service              | AWS                                      | No       |                                                                                              |
+| notification_channel |                                          | Yes      |                                                                                              |
+| additional_tags      | []                                       | No       |                                                                                              |
+| locked               | True                                     | No       |                                                                                              |
+| name_prefix          | ""                                       | No       |                                                                                              |
+| name_suffix          | ""                                       | No       |                                                                                              |
 
 
