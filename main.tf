@@ -1,5 +1,3 @@
-
-
 module "aws_services" {
   source = "git@github.com:kabisa/terraform-datadog-service-check-monitor.git?ref=1.2.0"
 
