@@ -1,8 +1,8 @@
 module "aws_services" {
-  source = "git@github.com:kabisa/terraform-datadog-service-check-monitor.git?ref=1.2.0"
+  source = "git@github.com:kabisa/terraform-datadog-service-check-monitor.git?ref=1.4.0"
 
-  name       = "Service Status"
-  check_name = "aws.status"
+  name        = "Service Status"
+  metric_name = "aws.status"
 
   alert_message    = "The AWS service {{service}} is not reporting correctly to Datadog."
   recovery_message = "The AWS service {{service}} integration has recovered"
