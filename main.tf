@@ -1,5 +1,6 @@
 module "aws_services" {
-  source = "git@github.com:kabisa/terraform-datadog-service-check-monitor.git?ref=1.4.0"
+  source  = "kabisa/service-check-monitor/datadog"
+  version = "2.0.0"
 
   name        = "Service Status"
   metric_name = "aws.status"
@@ -33,4 +34,3 @@ module "aws_services" {
   name_prefix          = var.name_prefix
   name_suffix          = var.name_suffix
 }
-

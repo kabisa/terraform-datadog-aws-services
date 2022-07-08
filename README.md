@@ -21,6 +21,7 @@ Modules are generated with this tool: https://github.com/kabisa/datadog-terrafor
 # Example Usage
 
 ```terraform
+# tflint-ignore: terraform_module_version
 module "aws_eu_west_1" {
   source = "kabisa/aws-services/datadog"
 
@@ -58,6 +59,7 @@ module "aws_eu_west_1" {
   ]
   name_suffix = each.key
 }
+
 ```
 
 Monitors:
