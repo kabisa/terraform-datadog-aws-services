@@ -2,9 +2,9 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/datadog/datadog" {
-  version     = "3.8.1"
-  constraints = "~> 3.4"
+  version     = "3.12.0"
+  constraints = "~> 3.12"
   hashes = [
-    "h1:iE/+ZYGemTxba6KHRzY93Ac9g46Z3ZJt846SbR5WgMM=",
+    "h1:NKOccOHib+yGmUNcICO2xc70Y3v5L9MmMlsayux4NOY=",
   ]
 }

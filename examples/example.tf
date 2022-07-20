@@ -1,3 +1,4 @@
+# tflint-ignore: terraform_module_version
 module "aws_eu_west_1" {
   source = "kabisa/aws-services/datadog"
 
