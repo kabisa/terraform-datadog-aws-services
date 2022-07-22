@@ -21,7 +21,6 @@ Modules are generated with this tool: https://github.com/kabisa/datadog-terrafor
 # Example Usage
 
 ```terraform
-# tflint-ignore: terraform_module_version
 module "aws_eu_west_1" {
   source = "kabisa/aws-services/datadog"
 
@@ -62,16 +61,20 @@ module "aws_eu_west_1" {
 
 ```
 
+
+[Module Variables](#module-variables)
+
 Monitors:
-* [Terraform module for Datadog Aws Services](#terraform-module-for-datadog-aws-services)
-  * [Module Variables](#module-variables)
+
+| Monitor name    | Default enabled | Priority | Query                  |
+|-----------------|------|----|------------------------|
 
 # Getting started developing
 [pre-commit](http://pre-commit.com/) was used to do Terraform linting and validating.
 
 Steps:
    - Install [pre-commit](http://pre-commit.com/). E.g. `brew install pre-commit`.
-   - Run `pre-commit install` in this repo. (Every time you cloud a repo with pre-commit enabled you will need to run the pre-commit install command)
+   - Run `pre-commit install` in this repo. (Every time you clone a repo with pre-commit enabled you will need to run the pre-commit install command)
    - That’s it! Now every time you commit a code change (`.tf` file), the hooks in the `hooks:` config `.pre-commit-config.yaml` will execute.
 
 ## Module Variables

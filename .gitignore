@@ -2,3 +2,4 @@
 *.tfstate.*
 **/.terraform/
 **/secrets.auto.tfvars
+examples/.terraform.lock.hcl
